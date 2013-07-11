@@ -1,0 +1,43 @@
+
+DC.title:`TXON: Text Object Notation -- Textual Punctuation For Data`
+=====================================================================
+
+*** unfinished ***
+
+
+DC:`
+   creator:`Harrison Ainsworth / HXA7241`
+
+   description:`Definition of a minimal general data format that you can write straight into any text.`
+   subject:`data format, text, JSON, software tool, python`
+   type:`technical article`
+   relation:`http://www.hxa.name/txon/`
+   language:`en-GB`
+
+   date:`2010-04-02`
+   date:`2010-05-18`
+`
+
+
+
+
+Definition
+----------
+
+It is a nestable key-value syntax structure: like a simplified JSON with only strings and objects, and a different textual representation. The basic structure is:
+
+   name:`value`
+
+This can be nested:
+
+   name:` name2:`nested value` `
+
+And names are optional and need not be unique, text content may be included alongside terms, and any layout is allowed:
+
+   references:`
+      JSON -- :`http://json.org/`
+      Lua --  :`http://lua.org/`
+   `
+
+Outside an expression, only the sequence of : followed by ` is special and not generally allowed. Inside an expression, ` is special and not generally allowed, unless escaped with \.
+
